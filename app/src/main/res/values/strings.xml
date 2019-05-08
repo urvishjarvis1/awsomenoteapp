@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">AwesomeNotes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_username">Username</string>
+    <string name="login">Login</string>
+    <string name="enter_password">Password</string>
+    <string name="doesn_t_have_account_a_signup_a">Doesn\'t have account? signup</string>
+    <string name="facebook">FaceBook</string>
+    <string name="google">Google</string>
+    <string name="suggestion">or Login with</string>
 </resources>
