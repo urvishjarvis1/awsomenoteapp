@@ -1,27 +1,40 @@
 package com.example.awesomenotes
 
-
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import kotlinx.android.synthetic.main.fragment_login.*
 
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- *
- */
 class LoginFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         return inflater.inflate(R.layout.fragment_login, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        fbbutton.setOnClickListener {
+            //todo add firebase code for login with facebook
+            Log.d("APP","Facebook")
+        }
+        googlebutton.setOnClickListener {
+            //todo add firebase code for login with google account
+            Log.d("APP","google")
+        }
+        loginbutton.setOnClickListener {
+            Log.d("APP","login")
+            /*
+            todo add firebase code for authenticate user based on the input
+            todo add navigation controller code to control the navigation
+          */
+        }
+        signup.setOnClickListener {
+            //todo add code for navigation controller.
+        }
     }
 
 

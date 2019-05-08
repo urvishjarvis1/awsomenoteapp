@@ -86,6 +86,7 @@
         </LinearLayout>
         <TextView android:layout_width="match_parent"
                   android:layout_height="wrap_content"
+                  android:id="@+id/signup"
                   android:text="@string/doesn_t_have_account_a_signup_a"
                   android:autoLink="phone"
                   android:textColor="@color/white"
