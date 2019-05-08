@@ -5,23 +5,28 @@
             android:layout_height="match_parent"
             android:fillViewport="true"
             tools:context=".SignUpFragment"
-            android:background="@color/colorPrimaryDark" android:id="@+id/frameLayout">
-    <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
-                                                  android:layout_height="match_parent"
-                                                  android:gravity="center"
-                                                  android:orientation="vertical"
-                                                  android:layout_margin="@dimen/_8dp">
-        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                   android:src="@mipmap/ic_launcher"
-                   android:layout_margin="@dimen/_8dp"
-                   android:padding="@dimen/_8dp"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/frameLayout">
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_8dp">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:layout_margin="@dimen/_8dp"
+                android:padding="@dimen/_8dp"
         />
         <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/uname"
+
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:background="@color/colorAccent">
             <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/uname"
                     android:hint="@string/enter_name"
                     android:background="@color/colorPrimary"
                     android:textColor="@color/white"
@@ -33,11 +38,12 @@
 
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/username"
+
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:background="@color/colorAccent">
             <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/username"
                     android:hint="@string/enter_username"
                     android:background="@color/colorPrimary"
                     android:textColor="@color/white"
@@ -88,18 +94,22 @@
                 android:layout_margin="@dimen/_8dp"
                 android:padding="@dimen/_8dp"
                 android:textColor="@color/white"/>
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
                   android:text="@string/suggestion"
                   android:textColor="@color/white"
                   android:gravity="center"
                   android:layout_margin="@dimen/_8dp"
                   android:padding="@dimen/_8dp"/>
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:orientation="horizontal"
-                      android:layout_margin="@dimen/_8dp"
-                      android:padding="@dimen/_8dp">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/_8dp"
+                android:padding="@dimen/_8dp">
             <Button
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:id="@+id/fbbutton"
                     android:layout_weight="1"
                     android:text="@string/facebook"
@@ -108,7 +118,8 @@
                     android:padding="@dimen/_8dp"
                     android:textColor="@color/white"/>
             <Button
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:id="@+id/googlebutton"
                     android:text="@string/google"
                     android:layout_weight="1"
