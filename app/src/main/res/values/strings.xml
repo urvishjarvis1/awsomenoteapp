@@ -10,4 +10,7 @@
     <string name="facebook">FaceBook</string>
     <string name="google">Google</string>
     <string name="suggestion">or Login with</string>
+    <string name="enter_name">Name</string>
+    <string name="confirm_password">Confrim Password</string>
+    <string name="signup">Sign Up</string>
 </resources>

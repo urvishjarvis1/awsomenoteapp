@@ -6,10 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_login.*
 
 class LoginFragment : Fragment() {
-
+    lateinit var navController:NavController;
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         return inflater.inflate(R.layout.fragment_login, container, false)
@@ -34,6 +37,8 @@ class LoginFragment : Fragment() {
         }
         signup.setOnClickListener {
             //todo add code for navigation controller.
+            findNavController().navigate(R.id.action_loginFragment_to_signUpFragment)
+
         }
     }
 
