@@ -20,6 +20,7 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        navController=findNavController()
         fbbutton.setOnClickListener {
             //todo add firebase code for login with facebook
             Log.d("APP","Facebook")
@@ -34,6 +35,7 @@ class LoginFragment : Fragment() {
             todo add firebase code for authenticate user based on the input
             todo add navigation controller code to control the navigation
           */
+            navController.navigate(R.id.action_loginFragment_to_mainFragment)
         }
         signup.setOnClickListener {
             //todo add code for navigation controller.

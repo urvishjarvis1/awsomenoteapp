@@ -9,7 +9,10 @@
         <action android:id="@+id/action_loginFragment_to_signUpFragment" app:destination="@id/signUpFragment"
                 app:enterAnim="@anim/nav_default_enter_anim" app:exitAnim="@anim/nav_default_exit_anim"
         />
+        <action android:id="@+id/action_loginFragment_to_mainFragment" app:destination="@id/mainFragment"/>
     </fragment>
     <fragment android:id="@+id/signUpFragment" android:name="com.example.awesomenotes.SignUpFragment"
               android:label="fragment_sign_up" tools:layout="@layout/fragment_sign_up"/>
+    <fragment android:id="@+id/mainFragment" android:name="com.example.awesomenotes.MainFragment"
+              android:label="fragment_main" tools:layout="@layout/fragment_main"/>
 </navigation>
